@@ -1,0 +1,72 @@
+.jurible-lien-lecon {
+    margin: 24px 0;
+
+    .jurible-lien-lecon-card {
+        background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
+        border-radius: 16px;
+        padding: 32px;
+        color: #ffffff;
+        display: block;
+        text-decoration: none;
+        cursor: default;
+        
+        .jurible-lien-lecon-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            
+            .jurible-lien-lecon-icon {
+                font-size: 20px;
+            }
+            
+            .jurible-lien-lecon-label {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                color: #ffffff !important;
+            }
+        }
+        
+        .jurible-lien-lecon-description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 16px 0;
+            color: #ffffff !important;
+            font-weight: 400 !important;
+        }
+        
+        .jurible-lien-lecon-btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #B0001D !important;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            
+            &:hover {
+                background: #f3f4f6;
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .jurible-lien-lecon .jurible-lien-lecon-card {
+        padding: 24px 20px;
+        
+        .jurible-lien-lecon-description {
+            font-size: 16px;
+        }
+        
+        .jurible-lien-lecon-btn {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
+}
