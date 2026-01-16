@@ -22,5 +22,6 @@ function jurible_blocks_react_init() {
 	register_block_type( __DIR__ . '/build/citation' );
 	register_block_type( __DIR__ . '/build/flashcards' );
 	register_block_type( __DIR__ . '/build/assessment' );
+	register_block_type( __DIR__ . '/build/playlist' );
 }
 add_action( 'init', 'jurible_blocks_react_init' );
