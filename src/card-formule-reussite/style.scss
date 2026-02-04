@@ -6,11 +6,11 @@
 
 .card-reussite {
 	position: relative;
-	background: #FFFFFF;
-	border: 2px solid #7C3AED;
-	border-radius: 12px;
+	background: var(--wp--preset--color--white);
+	border: 2px solid var(--wp--preset--color--secondary);
+	border-radius: var(--wp--custom--border-radius--lg);
 	overflow: hidden;
-	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+	box-shadow: var(--wp--preset--shadow--lg);
 }
 
 /* ==================== RIBBON ==================== */
@@ -18,15 +18,15 @@
 	position: absolute;
 	top: 20px;
 	right: -35px;
-	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
-	color: #FFFFFF;
-	font-size: 12px;
+	background: linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 100%);
+	color: var(--wp--preset--color--white);
+	font-size: var(--wp--preset--font-size--caption);
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	padding: 6px 40px;
 	transform: rotate(45deg);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--wp--preset--shadow--sm);
 	z-index: 10;
 }
 
@@ -38,28 +38,28 @@
 
 /* ==================== COLONNE GAUCHE ==================== */
 .card-reussite__left {
-	background: linear-gradient(135deg, #EDE9FE 0%, #DDD6FE 100%);
-	padding: 48px;
+	background: linear-gradient(135deg, var(--wp--preset--color--accent-bg) 0%, #DDD6FE 100%);
+	padding: var(--wp--preset--spacing--xl);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	gap: 24px;
+	gap: var(--wp--preset--spacing--md);
 }
 
 .card-reussite__badge {
 	display: inline-flex;
 	align-items: center;
 	gap: 6px;
-	background: #7C3AED;
-	color: #FFFFFF;
+	background: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--white);
 	font-size: 11px;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	padding: 6px 14px;
-	border-radius: 9999px;
+	border-radius: var(--wp--custom--border-radius--full);
 }
 
 .card-reussite__badge svg {
@@ -68,9 +68,9 @@
 }
 
 .card-reussite__title {
-	font-size: 24px;
+	font-size: var(--wp--preset--font-size--heading-3);
 	font-weight: 700;
-	color: #5B21B6;
+	color: var(--wp--preset--color--accent-text);
 	margin: 0;
 }
 
@@ -78,26 +78,26 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 6px;
-	background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
-	color: #92400E;
-	font-size: 12px;
+	background: linear-gradient(135deg, var(--wp--preset--color--warning-bg) 0%, #FDE68A 100%);
+	color: var(--wp--preset--color--warning-text);
+	font-size: var(--wp--preset--font-size--caption);
 	font-weight: 600;
 	padding: 6px 12px;
-	border-radius: 9999px;
+	border-radius: var(--wp--custom--border-radius--full);
 }
 
 /* ==================== PRICING BOX ==================== */
 .card-reussite__pricing {
-	background: #FFFFFF;
-	padding: 24px;
-	border-radius: 8px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+	background: var(--wp--preset--color--white);
+	padding: var(--wp--preset--spacing--md);
+	border-radius: var(--wp--custom--border-radius--md);
+	box-shadow: var(--wp--preset--shadow--sm);
 	width: 100%;
 }
 
 .card-reussite__value {
 	font-size: 13px;
-	color: #9CA3AF;
+	color: var(--wp--preset--color--text-muted);
 	text-decoration: line-through;
 	margin-bottom: 4px;
 }
@@ -111,25 +111,25 @@
 }
 
 .card-reussite__price-amount {
-	font-size: 32px;
+	font-size: var(--wp--preset--font-size--heading-2);
 	font-weight: 700;
-	color: #7C3AED;
+	color: var(--wp--preset--color--secondary);
 }
 
 .card-reussite__price-period {
-	font-size: 14px;
-	color: #4B5563;
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--wp--preset--color--text-gray);
 }
 
 .card-reussite__savings {
 	display: inline-block;
-	background: #ECFDF5;
-	color: #065F46;
-	font-size: 12px;
+	background: var(--wp--preset--color--success-bg);
+	color: var(--wp--preset--color--success-text);
+	font-size: var(--wp--preset--font-size--caption);
 	font-weight: 600;
 	padding: 4px 10px;
-	border-radius: 9999px;
-	margin-top: 8px;
+	border-radius: var(--wp--custom--border-radius--full);
+	margin-top: var(--wp--preset--spacing--xs);
 }
 
 /* ==================== COUNTDOWN ==================== */
@@ -140,35 +140,35 @@
 .card-reussite__countdown-label {
 	font-size: 13px;
 	font-weight: 500;
-	color: #5B21B6;
-	margin: 0 0 8px 0;
+	color: var(--wp--preset--color--accent-text);
+	margin: 0 0 var(--wp--preset--spacing--xs) 0;
 }
 
 .card-reussite__countdown {
 	display: flex;
 	justify-content: center;
-	gap: 8px;
+	gap: var(--wp--preset--spacing--xs);
 }
 
 .countdown-item {
-	background: #FFFFFF;
+	background: var(--wp--preset--color--white);
 	padding: 10px 14px;
-	border-radius: 6px;
+	border-radius: var(--wp--custom--border-radius--sm);
 	text-align: center;
 	min-width: 56px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--wp--preset--shadow--sm);
 }
 
 .countdown-item__value {
-	font-size: 20px;
+	font-size: var(--wp--preset--font-size--heading-4);
 	font-weight: 700;
-	color: #7C3AED;
+	color: var(--wp--preset--color--secondary);
 	line-height: 1;
 }
 
 .countdown-item__label {
 	font-size: 10px;
-	color: #9CA3AF;
+	color: var(--wp--preset--color--text-muted);
 	text-transform: uppercase;
 	margin-top: 4px;
 }
@@ -179,8 +179,8 @@
 	align-items: center;
 	justify-content: center;
 	gap: 6px;
-	font-size: 12px;
-	color: #5B21B6;
+	font-size: var(--wp--preset--font-size--caption);
+	color: var(--wp--preset--color--accent-text);
 	font-weight: 500;
 }
 
@@ -191,10 +191,10 @@
 
 /* ==================== COLONNE DROITE ==================== */
 .card-reussite__right {
-	padding: 32px;
+	padding: var(--wp--preset--spacing--lg);
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
+	gap: var(--wp--preset--spacing--md);
 }
 
 .card-reussite__header {
@@ -202,15 +202,15 @@
 }
 
 .card-reussite__header-title {
-	font-size: 18px;
+	font-size: var(--wp--preset--font-size--body-large);
 	font-weight: 600;
-	color: #1A1A1A;
+	color: var(--wp--preset--color--text-dark);
 	margin: 0 0 4px 0;
 }
 
 .card-reussite__header-subtitle {
-	font-size: 14px;
-	color: #9CA3AF;
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--wp--preset--color--text-muted);
 	margin: 0;
 }
 
@@ -218,33 +218,33 @@
 .card-reussite__features {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 16px;
+	gap: var(--wp--preset--spacing--sm);
 }
 
 .feature-item {
 	display: flex;
 	align-items: flex-start;
-	gap: 16px;
-	padding: 16px;
-	background: #F9FAFB;
-	border-radius: 8px;
-	transition: all 150ms ease;
+	gap: var(--wp--preset--spacing--sm);
+	padding: var(--wp--preset--spacing--sm);
+	background: var(--wp--preset--color--background);
+	border-radius: var(--wp--custom--border-radius--md);
+	transition: var(--wp--custom--transition--default);
 }
 
 .feature-item:hover {
-	background: #EDE9FE;
+	background: var(--wp--preset--color--accent-bg);
 }
 
 .feature-item__icon {
 	width: 40px;
 	height: 40px;
-	background: #EDE9FE;
-	border-radius: 8px;
+	background: var(--wp--preset--color--accent-bg);
+	border-radius: var(--wp--custom--border-radius--md);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-shrink: 0;
-	font-size: 18px;
+	font-size: var(--wp--preset--font-size--body-large);
 }
 
 .feature-item__content {
@@ -253,30 +253,30 @@
 }
 
 .feature-item__title {
-	font-size: 14px;
+	font-size: var(--wp--preset--font-size--small);
 	font-weight: 600;
-	color: #1A1A1A;
+	color: var(--wp--preset--color--text-dark);
 	margin-bottom: 2px;
 }
 
 .feature-item__desc {
-	font-size: 12px;
-	color: #9CA3AF;
-	line-height: 1.4;
+	font-size: var(--wp--preset--font-size--caption);
+	color: var(--wp--preset--color--text-muted);
+	line-height: var(--wp--custom--line-height--subheading);
 }
 
 /* ==================== INCLUDES ==================== */
 .card-reussite__includes {
-	background: #F9FAFB;
-	padding: 16px;
-	border-radius: 8px;
+	background: var(--wp--preset--color--background);
+	padding: var(--wp--preset--spacing--sm);
+	border-radius: var(--wp--custom--border-radius--md);
 }
 
 .card-reussite__includes-title {
 	font-size: 13px;
 	font-weight: 600;
-	color: #1A1A1A;
-	margin: 0 0 8px 0;
+	color: var(--wp--preset--color--text-dark);
+	margin: 0 0 var(--wp--preset--spacing--xs) 0;
 }
 
 .card-reussite__includes-list {
@@ -289,24 +289,24 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 4px;
-	background: #FFFFFF;
+	background: var(--wp--preset--color--white);
 	padding: 4px 10px;
-	border-radius: 9999px;
+	border-radius: var(--wp--custom--border-radius--full);
 	font-size: 11px;
-	color: #4B5563;
+	color: var(--wp--preset--color--text-gray);
 }
 
 .include-tag svg {
 	width: 12px;
 	height: 12px;
-	color: #10B981;
+	color: var(--wp--preset--color--success);
 }
 
 /* ==================== CTA SECTION ==================== */
 .card-reussite__cta-section {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: var(--wp--preset--spacing--sm);
 	margin-top: auto;
 }
 
@@ -314,27 +314,27 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 8px;
+	gap: var(--wp--preset--spacing--xs);
 	width: 100%;
-	padding: 14px 24px;
-	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
-	color: #FFFFFF;
-	font-family: 'Poppins', sans-serif;
+	padding: 14px var(--wp--preset--spacing--md);
+	background: linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 100%);
+	color: var(--wp--preset--color--white);
+	font-family: var(--wp--preset--font-family--poppins);
 	font-size: 15px;
 	font-weight: 600;
 	border: none;
-	border-radius: 8px;
+	border-radius: var(--wp--custom--border-radius--md);
 	cursor: pointer;
-	transition: all 150ms ease;
+	transition: var(--wp--custom--transition--default);
 	text-decoration: none;
 	box-sizing: border-box;
 }
 
 .card-reussite__cta:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--wp--preset--shadow--md);
 	filter: brightness(1.1);
-	color: #FFFFFF;
+	color: var(--wp--preset--color--white);
 	text-decoration: none;
 }
 
@@ -348,8 +348,8 @@
 	align-items: center;
 	justify-content: center;
 	gap: 6px;
-	font-size: 12px;
-	color: #9CA3AF;
+	font-size: var(--wp--preset--font-size--caption);
+	color: var(--wp--preset--color--text-muted);
 	font-style: italic;
 	margin: 0;
 }
@@ -357,7 +357,7 @@
 .card-reussite__notice svg {
 	width: 14px;
 	height: 14px;
-	color: #7C3AED;
+	color: var(--wp--preset--color--secondary);
 }
 
 /* ==================== CONTAINER QUERY : 2 colonnes → 1 colonne ==================== */
@@ -368,12 +368,12 @@
 
 	.card-reussite__left {
 		padding: 40px;
-		gap: 16px;
+		gap: var(--wp--preset--spacing--sm);
 	}
 
 	.card-reussite__right {
-		padding: 32px;
-		gap: 16px;
+		padding: var(--wp--preset--spacing--lg);
+		gap: var(--wp--preset--spacing--sm);
 	}
 
 	.card-reussite__header {
@@ -381,12 +381,12 @@
 	}
 
 	.card-reussite__header-title {
-		font-size: 16px;
+		font-size: var(--wp--preset--font-size--medium);
 	}
 
 	.card-reussite__features {
 		grid-template-columns: 1fr;
-		gap: 8px;
+		gap: var(--wp--preset--spacing--xs);
 	}
 
 	.feature-item {
@@ -396,7 +396,7 @@
 	.feature-item__icon {
 		width: 36px;
 		height: 36px;
-		font-size: 16px;
+		font-size: var(--wp--preset--font-size--medium);
 	}
 
 	.feature-item__title {
@@ -415,7 +415,7 @@
 	}
 
 	.card-reussite__title {
-		font-size: 20px;
+		font-size: var(--wp--preset--font-size--heading-4);
 	}
 
 	.card-reussite__price-amount {
@@ -423,16 +423,16 @@
 	}
 
 	.card-reussite__pricing {
-		padding: 16px;
+		padding: var(--wp--preset--spacing--sm);
 	}
 
 	.countdown-item {
-		padding: 8px 10px;
+		padding: var(--wp--preset--spacing--xs) 10px;
 		min-width: 48px;
 	}
 
 	.countdown-item__value {
-		font-size: 16px;
+		font-size: var(--wp--preset--font-size--medium);
 	}
 
 	.countdown-item__label {
@@ -440,7 +440,7 @@
 	}
 
 	.card-reussite__countdown-label {
-		font-size: 12px;
+		font-size: var(--wp--preset--font-size--caption);
 	}
 
 	.card-reussite__social-proof {
@@ -452,17 +452,17 @@
 	}
 
 	.card-reussite__includes-title {
-		font-size: 12px;
+		font-size: var(--wp--preset--font-size--caption);
 	}
 
 	.include-tag {
 		font-size: 10px;
-		padding: 3px 8px;
+		padding: 3px var(--wp--preset--spacing--xs);
 	}
 
 	.card-reussite__cta {
-		padding: 12px 16px;
-		font-size: 14px;
+		padding: 12px var(--wp--preset--spacing--sm);
+		font-size: var(--wp--preset--font-size--small);
 	}
 
 	.card-reussite__notice {
@@ -473,12 +473,12 @@
 /* ==================== TRÈS PETIT ÉCRAN ==================== */
 @container (max-width: 400px) {
 	.card-reussite__left {
-		padding: 32px;
+		padding: var(--wp--preset--spacing--lg);
 		gap: 12px;
 	}
 
 	.card-reussite__right {
-		padding: 24px;
+		padding: var(--wp--preset--spacing--md);
 		gap: 12px;
 	}
 
@@ -493,16 +493,16 @@
 	}
 
 	.card-reussite__title {
-		font-size: 18px;
+		font-size: var(--wp--preset--font-size--body-large);
 	}
 
 	.card-reussite__season {
 		font-size: 10px;
-		padding: 4px 8px;
+		padding: 4px var(--wp--preset--spacing--xs);
 	}
 
 	.card-reussite__price-amount {
-		font-size: 24px;
+		font-size: var(--wp--preset--font-size--heading-3);
 	}
 
 	.card-reussite__price-period {
@@ -519,16 +519,16 @@
 
 	.card-reussite__savings {
 		font-size: 10px;
-		padding: 3px 8px;
+		padding: 3px var(--wp--preset--spacing--xs);
 	}
 
 	.countdown-item {
-		padding: 6px 8px;
+		padding: 6px var(--wp--preset--spacing--xs);
 		min-width: 40px;
 	}
 
 	.countdown-item__value {
-		font-size: 14px;
+		font-size: var(--wp--preset--font-size--small);
 	}
 
 	.countdown-item__label {
@@ -553,7 +553,7 @@
 	}
 
 	.card-reussite__header-title {
-		font-size: 14px;
+		font-size: var(--wp--preset--font-size--small);
 	}
 
 	.card-reussite__header-subtitle {
@@ -561,17 +561,17 @@
 	}
 
 	.feature-item {
-		padding: 8px;
+		padding: var(--wp--preset--spacing--xs);
 	}
 
 	.feature-item__icon {
 		width: 32px;
 		height: 32px;
-		font-size: 14px;
+		font-size: var(--wp--preset--font-size--small);
 	}
 
 	.feature-item__title {
-		font-size: 12px;
+		font-size: var(--wp--preset--font-size--caption);
 	}
 
 	.feature-item__desc {
@@ -586,7 +586,7 @@
 	}
 
 	.card-reussite__includes {
-		padding: 8px;
+		padding: var(--wp--preset--spacing--xs);
 	}
 
 	.card-reussite__includes-title {
@@ -605,7 +605,7 @@
 
 	.card-reussite__cta {
 		padding: 10px 12px;
-		font-size: 12px;
+		font-size: var(--wp--preset--font-size--caption);
 	}
 
 	.card-reussite__cta svg {

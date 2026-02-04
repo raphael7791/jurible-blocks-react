@@ -1,55 +1,55 @@
 .jurible-lien-lecon {
-    margin: 24px 0;
+    margin: var(--wp--preset--spacing--md) 0;
 
     .jurible-lien-lecon-card {
-        background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
-        border-radius: 16px;
-        padding: 32px;
-        color: #ffffff;
+        background: linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 100%);
+        border-radius: var(--wp--custom--border-radius--lg);
+        padding: var(--wp--preset--spacing--lg);
+        color: var(--wp--preset--color--white);
         display: block;
         text-decoration: none;
         cursor: default;
-        
+
         .jurible-lien-lecon-header {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: var(--wp--preset--spacing--xs);
             margin-bottom: 12px;
-            
+
             .jurible-lien-lecon-icon {
-                font-size: 20px;
+                font-size: var(--wp--preset--font-size--medium);
             }
-            
+
             .jurible-lien-lecon-label {
-                font-size: 14px;
+                font-size: var(--wp--preset--font-size--small);
                 font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
-                color: #ffffff !important;
+                color: var(--wp--preset--color--white) !important;
             }
         }
-        
+
         .jurible-lien-lecon-description {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 16px 0;
-            color: #ffffff !important;
+            font-size: var(--wp--preset--font-size--medium);
+            line-height: var(--wp--custom--line-height--body);
+            margin: var(--wp--preset--spacing--sm) 0;
+            color: var(--wp--preset--color--white) !important;
             font-weight: 400 !important;
         }
-        
+
         .jurible-lien-lecon-btn {
             display: inline-block;
-            background: #ffffff;
-            color: #B0001D !important;
-            padding: 12px 24px;
-            border-radius: 8px;
+            background: var(--wp--preset--color--white);
+            color: var(--wp--preset--color--primary) !important;
+            padding: 12px var(--wp--preset--spacing--md);
+            border-radius: var(--wp--custom--border-radius--md);
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: var(--wp--custom--transition--slow);
             cursor: pointer;
             text-decoration: none;
-            
+
             &:hover {
-                background: #f3f4f6;
+                background: var(--wp--preset--color--background);
                 transform: translateX(4px);
             }
         }
@@ -58,15 +58,15 @@
 
 @media (max-width: 480px) {
     .jurible-lien-lecon .jurible-lien-lecon-card {
-        padding: 24px 20px;
-        
+        padding: var(--wp--preset--spacing--md) 20px;
+
         .jurible-lien-lecon-description {
-            font-size: 16px;
+            font-size: var(--wp--preset--font-size--medium);
         }
-        
+
         .jurible-lien-lecon-btn {
             padding: 10px 20px;
-            font-size: 14px;
+            font-size: var(--wp--preset--font-size--small);
         }
     }
 }

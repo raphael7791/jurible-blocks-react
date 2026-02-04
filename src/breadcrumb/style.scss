@@ -2,29 +2,29 @@
 .jurible-breadcrumb {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 14px;
+    gap: var(--wp--preset--spacing--xs);
+    font-size: var(--wp--preset--font-size--small);
     flex-wrap: wrap;
 }
 
 .jurible-breadcrumb-item {
-    color: #9CA3AF;
+    color: var(--wp--preset--color--text-muted);
     text-decoration: none;
-    transition: color 0.15s ease;
+    transition: var(--wp--custom--transition--default);
 }
 
 .jurible-breadcrumb-item:hover {
-    color: #B0001D;
+    color: var(--wp--preset--color--primary);
 }
 
 .jurible-breadcrumb-item--active {
-    color: #1A1A1A;
+    color: var(--wp--preset--color--text-dark);
     font-weight: 500;
     pointer-events: none;
 }
 
 .jurible-breadcrumb-separator {
-    color: #9CA3AF;
+    color: var(--wp--preset--color--text-muted);
 }
 
 /* Home item */

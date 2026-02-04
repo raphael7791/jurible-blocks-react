@@ -1246,6 +1246,52 @@ Commentaire d\'arrêt'
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
+	'solution-card' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'jurible/solution-card',
+		'version' => '1.0.0',
+		'title' => 'Solution Card',
+		'category' => 'jurible',
+		'icon' => 'lightbulb',
+		'description' => 'Carte solution/bénéfice avec icône, titre et description',
+		'keywords' => array(
+			'solution',
+			'bénéfice',
+			'feature',
+			'avantage',
+			'card'
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'attributes' => array(
+			'layout' => array(
+				'type' => 'string',
+				'default' => 'horizontal',
+				'enum' => array(
+					'horizontal',
+					'centered'
+				)
+			),
+			'icon' => array(
+				'type' => 'string',
+				'default' => '📚'
+			),
+			'title' => array(
+				'type' => 'string',
+				'default' => 'Titre de la solution'
+			),
+			'description' => array(
+				'type' => 'string',
+				'default' => 'Description de la solution ou du bénéfice.'
+			)
+		),
+		'textdomain' => 'jurible-blocks-react',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
 	'sommaire' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,

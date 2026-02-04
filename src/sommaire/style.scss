@@ -4,10 +4,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    background: #F9FAFB;
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
-    margin-bottom: 24px;
+    background: var(--wp--preset--color--background);
+    border: 1px solid var(--wp--preset--color--border);
+    border-radius: var(--wp--custom--border-radius--lg);
+    margin-bottom: var(--wp--preset--spacing--md);
     padding-top: clamp(20px, 4vw, 24px);
     padding-right: clamp(20px, 4vw, 24px);
     padding-bottom: clamp(12px, 3vw, 16px);
@@ -19,17 +19,17 @@
     flex-direction: row;
     align-items: center;
     padding: 0;
-    gap: 8px;
+    gap: var(--wp--preset--spacing--xs);
 
     .jurible-sommaire-icon {
-        font-size: 16px;
+        font-size: var(--wp--preset--font-size--medium);
     }
 
     .jurible-sommaire-title {
-        font-family: 'Poppins', sans-serif;
+        font-family: var(--wp--preset--font-family--poppins);
         font-weight: 600;
-        font-size: 14px;
-        color: #1B1B1B;
+        font-size: var(--wp--preset--font-size--small);
+        color: var(--wp--preset--color--text-dark);
     }
 }
 
@@ -52,21 +52,21 @@
     }
 
     li + li {
-        border-top: 1px solid #E5E7EB !important;
+        border-top: 1px solid var(--wp--preset--color--border) !important;
         margin-top: 9px !important;
         padding-top: 9px !important;
     }
 
     a {
-        color: #4A4A4A !important;
+        color: var(--wp--preset--color--text-gray) !important;
         text-decoration: none !important;
-        font-family: 'Poppins', sans-serif !important;
-        font-size: 14px !important;
+        font-family: var(--wp--preset--font-family--poppins) !important;
+        font-size: var(--wp--preset--font-size--small) !important;
         margin-bottom: 0 !important;
-        transition: color 0.2s ease;
+        transition: var(--wp--custom--transition--default);
 
         &:hover {
-            color: #B0001D !important;
+            color: var(--wp--preset--color--primary) !important;
         }
     }
 }
@@ -78,10 +78,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 24px;
-    background: #F9FAFB;
-    border: 2px dashed #E5E7EB;
-    border-radius: 12px;
+    padding: var(--wp--preset--spacing--md);
+    background: var(--wp--preset--color--background);
+    border: 2px dashed var(--wp--preset--color--border);
+    border-radius: var(--wp--custom--border-radius--lg);
     text-align: center;
 }
 
@@ -90,16 +90,16 @@
 }
 
 .jurible-sommaire-preview .jurible-sommaire-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 600;
-    font-size: 16px;
-    color: #1B1B1B;
+    font-size: var(--wp--preset--font-size--medium);
+    color: var(--wp--preset--color--text-dark);
 }
 
 .jurible-sommaire-info {
-    color: #9CA3AF;
-    font-size: 13px;
-    margin: 8px 0 0;
+    color: var(--wp--preset--color--text-muted);
+    font-size: var(--wp--preset--font-size--small);
+    margin: var(--wp--preset--spacing--xs) 0 0;
 }
 
 /* Mode sombre */
@@ -118,10 +118,10 @@ html.dark .jurible-sommaire-list {
     }
 
     a {
-        color: #E5E7EB !important;
+        color: var(--wp--preset--color--border) !important;
 
         &:hover {
-            color: #B0001D !important;
+            color: var(--wp--preset--color--primary) !important;
         }
     }
 }
@@ -136,5 +136,5 @@ html.dark .jurible-sommaire-preview .jurible-sommaire-title {
 }
 
 html.dark .jurible-sommaire-info {
-    color: #9CA3AF;
+    color: var(--wp--preset--color--text-muted);
 }

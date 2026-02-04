@@ -8,26 +8,26 @@
 .minos-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 24px;
+	gap: var(--wp--preset--spacing--md);
 	align-items: stretch;
 }
 
 /* ==================== CARD MINOS ==================== */
 .minos-card {
 	position: relative;
-	background: #FFFFFF;
-	border: 1px solid #E5E7EB;
-	border-radius: 12px;
-	padding: 24px;
+	background: var(--wp--preset--color--white);
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--custom--border-radius--lg);
+	padding: var(--wp--preset--spacing--md);
 	display: flex;
 	flex-direction: column;
-	transition: all 150ms ease;
+	transition: var(--wp--custom--transition--default);
 	cursor: pointer;
 }
 
 .minos-card:hover {
 	transform: translateY(-4px);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--wp--preset--shadow--md);
 }
 
 /* ==================== CARD FEATURED (Pro) ==================== */
@@ -35,14 +35,14 @@
 	border: 2px solid transparent;
 	background:
 		linear-gradient(white, white) padding-box,
-		linear-gradient(135deg, #B0001D 0%, #7C3AED 100%) border-box;
+		linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 100%) border-box;
 	transform: scale(1.03);
-	box-shadow: 0 4px 14px rgba(124, 58, 237, 0.25);
+	box-shadow: var(--wp--preset--shadow--accent);
 }
 
 .minos-card--featured:hover {
 	transform: scale(1.03) translateY(-4px);
-	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 14px rgba(124, 58, 237, 0.25);
+	box-shadow: var(--wp--preset--shadow--lg), var(--wp--preset--shadow--accent);
 }
 
 /* ==================== RIBBON ==================== */
@@ -51,14 +51,14 @@
 	top: -1px;
 	left: -1px;
 	right: -1px;
-	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
-	color: #FFFFFF;
-	font-size: 11px;
+	background: linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 100%);
+	color: var(--wp--preset--color--white);
+	font-size: var(--wp--preset--font-size--caption);
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	padding: 8px 24px;
-	border-radius: 12px 12px 0 0;
+	padding: var(--wp--preset--spacing--xs) var(--wp--preset--spacing--md);
+	border-radius: var(--wp--custom--border-radius--lg) var(--wp--custom--border-radius--lg) 0 0;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -67,7 +67,7 @@
 }
 
 .minos-card--featured .minos-card__credits {
-	margin-top: 24px;
+	margin-top: var(--wp--preset--spacing--md);
 }
 
 /* ==================== BADGE CRÉDITS ==================== */
@@ -75,41 +75,41 @@
 	display: inline-flex;
 	align-items: center;
 	padding: 5px 12px;
-	border-radius: 9999px;
-	font-size: 12px;
+	border-radius: var(--wp--custom--border-radius--full);
+	font-size: var(--wp--preset--font-size--caption);
 	font-weight: 600;
-	margin-bottom: 16px;
+	margin-bottom: var(--wp--preset--spacing--sm);
 	width: fit-content;
 }
 
 .minos-card__credits--standard {
-	background: #FEF3C7;
-	color: #92400E;
+	background: var(--wp--preset--color--warning-bg);
+	color: var(--wp--preset--color--warning-text);
 }
 
 .minos-card__credits--pro {
-	background: #F59E0B;
-	color: #FFFFFF;
+	background: var(--wp--preset--color--warning);
+	color: var(--wp--preset--color--white);
 }
 
 .minos-card__credits--bonus {
-	background: #EDE9FE;
-	color: #7C3AED;
+	background: var(--wp--preset--color--accent-bg);
+	color: var(--wp--preset--color--secondary);
 }
 
 /* ==================== HEADER ==================== */
 .minos-card__header {
 	display: flex;
 	align-items: center;
-	gap: 8px;
-	margin-bottom: 8px;
+	gap: var(--wp--preset--spacing--xs);
+	margin-bottom: var(--wp--preset--spacing--xs);
 	flex-wrap: wrap;
 }
 
 .minos-card__title {
-	font-size: 20px;
+	font-size: var(--wp--preset--font-size--medium);
 	font-weight: 700;
-	color: #1A1A1A;
+	color: var(--wp--preset--color--text-dark);
 	margin: 0;
 }
 
@@ -118,7 +118,7 @@
 	display: inline-flex;
 	align-items: center;
 	padding: 4px 10px;
-	border-radius: 9999px;
+	border-radius: var(--wp--custom--border-radius--full);
 	font-size: 10px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -126,60 +126,60 @@
 }
 
 .minos-card__badge--popular {
-	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
-	color: #FFFFFF;
+	background: linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 100%);
+	color: var(--wp--preset--color--white);
 }
 
 /* ==================== DESCRIPTION ==================== */
 .minos-card__description {
-	font-size: 13px;
-	color: #4B5563;
-	margin: 0 0 24px 0;
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--wp--preset--color--text-gray);
+	margin: 0 0 var(--wp--preset--spacing--md) 0;
 }
 
 /* ==================== PRICING ==================== */
 .minos-card__pricing {
-	margin-bottom: 16px;
+	margin-bottom: var(--wp--preset--spacing--sm);
 }
 
 .minos-card__price-row {
 	display: flex;
 	align-items: center;
-	gap: 8px;
+	gap: var(--wp--preset--spacing--xs);
 	margin-bottom: 4px;
 }
 
 .minos-card__price {
 	font-size: 36px;
 	font-weight: 700;
-	color: #1A1A1A;
+	color: var(--wp--preset--color--text-dark);
 	line-height: 1;
 }
 
 .minos-card__price--success {
-	color: #10B981;
+	color: var(--wp--preset--color--success);
 }
 
 .minos-card__discount {
 	display: inline-flex;
 	align-items: center;
-	background: #ECFDF5;
-	color: #065F46;
-	font-size: 14px;
+	background: var(--wp--preset--color--success-bg);
+	color: var(--wp--preset--color--success-text);
+	font-size: var(--wp--preset--font-size--small);
 	font-weight: 700;
 	padding: 6px 12px;
-	border-radius: 8px;
+	border-radius: var(--wp--custom--border-radius--md);
 }
 
 .minos-card__price-info {
-	font-size: 12px;
-	color: #9CA3AF;
+	font-size: var(--wp--preset--font-size--caption);
+	color: var(--wp--preset--color--text-muted);
 	margin: 4px 0 0 0;
 }
 
 /* ==================== INCLUDES ==================== */
 .minos-card__includes {
-	margin-bottom: 24px;
+	margin-bottom: var(--wp--preset--spacing--md);
 	flex: 1;
 }
 
@@ -188,34 +188,34 @@
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	color: #9CA3AF;
-	margin: 0 0 8px 0;
+	color: var(--wp--preset--color--text-muted);
+	margin: 0 0 var(--wp--preset--spacing--xs) 0;
 }
 
 .minos-card__includes-list {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: var(--wp--preset--spacing--xs);
 }
 
 .minos-card__include-item {
 	display: flex;
 	align-items: center;
-	gap: 8px;
-	font-size: 13px;
-	color: #4B5563;
+	gap: var(--wp--preset--spacing--xs);
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--wp--preset--color--text-gray);
 }
 
 /* ==================== CTA ==================== */
 .minos-card__cta {
 	width: 100%;
-	padding: 12px 24px;
-	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
+	padding: 12px var(--wp--preset--spacing--md);
+	font-family: var(--wp--preset--font-family--poppins);
+	font-size: var(--wp--preset--font-size--small);
 	font-weight: 600;
-	border-radius: 8px;
+	border-radius: var(--wp--custom--border-radius--md);
 	cursor: pointer;
-	transition: all 150ms ease;
+	transition: var(--wp--custom--transition--default);
 	text-align: center;
 	text-decoration: none;
 	display: block;
@@ -224,53 +224,53 @@
 }
 
 .minos-card__cta--gradient {
-	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
-	color: #FFFFFF;
+	background: linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 100%);
+	color: var(--wp--preset--color--white);
 	border: none;
 }
 
 .minos-card__cta--gradient:hover {
 	filter: brightness(1.1);
 	transform: translateY(-1px);
-	color: #FFFFFF;
+	color: var(--wp--preset--color--white);
 	text-decoration: none;
 }
 
 .minos-card__cta--outline {
-	background: #FFFFFF;
-	color: #1A1A1A;
-	border: 1px solid #E5E7EB;
+	background: var(--wp--preset--color--white);
+	color: var(--wp--preset--color--text-dark);
+	border: 1px solid var(--wp--preset--color--border);
 }
 
 .minos-card__cta--outline:hover {
-	border-color: #F59E0B;
-	color: #92400E;
-	background: #FEF3C7;
+	border-color: var(--wp--preset--color--warning);
+	color: var(--wp--preset--color--warning-text);
+	background: var(--wp--preset--color--warning-bg);
 	text-decoration: none;
 }
 
 .minos-card__cta--outline-primary {
-	border-color: #B0001D;
-	color: #B0001D;
+	border-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--primary);
 }
 
 .minos-card__cta--outline-primary:hover {
-	background: #B0001D;
-	color: #FFFFFF;
-	border-color: #B0001D;
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--white);
+	border-color: var(--wp--preset--color--primary);
 	text-decoration: none;
 }
 
 /* ==================== NOTE ==================== */
 .minos-card__note {
-	font-size: 11px;
-	color: #9CA3AF;
+	font-size: var(--wp--preset--font-size--caption);
+	color: var(--wp--preset--color--text-muted);
 	text-align: center;
-	margin: 8px 0 0 0;
+	margin: var(--wp--preset--spacing--xs) 0 0 0;
 }
 
 .minos-card__note a {
-	color: #7C3AED;
+	color: var(--wp--preset--color--secondary);
 	text-decoration: underline;
 }
 
@@ -284,7 +284,7 @@
 		grid-template-columns: 1fr;
 		max-width: 400px;
 		margin: 0 auto;
-		gap: 16px;
+		gap: var(--wp--preset--spacing--sm);
 	}
 
 	.minos-card--featured {
@@ -309,13 +309,13 @@
 	}
 
 	.minos-card__discount {
-		font-size: 12px;
+		font-size: var(--wp--preset--font-size--caption);
 		padding: 4px 10px;
 	}
 
 	.minos-card__cta {
 		padding: 10px 20px;
-		font-size: 13px;
+		font-size: var(--wp--preset--font-size--small);
 	}
 }
 
@@ -326,12 +326,12 @@
 	}
 
 	.minos-card {
-		padding: 16px;
+		padding: var(--wp--preset--spacing--sm);
 	}
 
 	.minos-card__ribbon {
 		font-size: 10px;
-		padding: 6px 16px;
+		padding: 6px var(--wp--preset--spacing--sm);
 	}
 
 	.minos-card__credits {
@@ -340,11 +340,11 @@
 	}
 
 	.minos-card__title {
-		font-size: 16px;
+		font-size: var(--wp--preset--font-size--medium);
 	}
 
 	.minos-card__description {
-		font-size: 12px;
+		font-size: var(--wp--preset--font-size--caption);
 	}
 
 	.minos-card__price {
@@ -352,11 +352,11 @@
 	}
 
 	.minos-card__include-item {
-		font-size: 12px;
+		font-size: var(--wp--preset--font-size--caption);
 	}
 
 	.minos-card__cta {
-		padding: 10px 16px;
-		font-size: 12px;
+		padding: 10px var(--wp--preset--spacing--sm);
+		font-size: var(--wp--preset--font-size--caption);
 	}
 }

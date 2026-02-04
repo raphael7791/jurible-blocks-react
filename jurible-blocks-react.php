@@ -32,6 +32,62 @@ function jurible_blocks_react_init() {
 	register_block_type( __DIR__ . '/build/card-formule-reussite' );
 	register_block_type( __DIR__ . '/build/card-pricing-suite-ia' );
 	register_block_type( __DIR__ . '/build/card-produits-comparatif' );
+	register_block_type( __DIR__ . '/build/solution-card' );
 	// register_block_type( __DIR__ . '/build/playlist' );
 }
 add_action( 'init', 'jurible_blocks_react_init' );
+
+/**
+ * Register block pattern category
+ */
+function jurible_blocks_react_register_pattern_category() {
+	register_block_pattern_category( 'jurible', array(
+		'label' => __( 'Jurible', 'jurible-blocks-react' ),
+	) );
+}
+add_action( 'init', 'jurible_blocks_react_register_pattern_category' );
+
+/**
+ * Register block patterns
+ */
+function jurible_blocks_react_register_patterns() {
+	$patterns_dir = __DIR__ . '/patterns/';
+
+	if ( ! is_dir( $patterns_dir ) ) {
+		return;
+	}
+
+	$pattern_files = glob( $patterns_dir . '*.php' );
+
+	foreach ( $pattern_files as $pattern_file ) {
+		$pattern_data = get_file_data( $pattern_file, array(
+			'title'       => 'Title',
+			'slug'        => 'Slug',
+			'description' => 'Description',
+			'categories'  => 'Categories',
+		) );
+
+		if ( empty( $pattern_data['title'] ) || empty( $pattern_data['slug'] ) ) {
+			continue;
+		}
+
+		ob_start();
+		include $pattern_file;
+		$content = ob_get_clean();
+
+		$categories = ! empty( $pattern_data['categories'] )
+			? array_map( 'trim', explode( ',', $pattern_data['categories'] ) )
+			: array( 'jurible' );
+
+		register_block_pattern(
+			$pattern_data['slug'],
+			array(
+				'title'       => $pattern_data['title'],
+				'description' => $pattern_data['description'],
+				'content'     => $content,
+				'categories'  => $categories,
+			)
+		);
+	}
+}
+add_action( 'init', 'jurible_blocks_react_register_patterns' );

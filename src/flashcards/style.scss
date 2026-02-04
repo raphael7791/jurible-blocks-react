@@ -4,14 +4,14 @@
 
 /* CSS Variables for theming */
 :root {
-    --fc-bg-card: #FFFFFF;
-    --fc-bg-secondary: #F3F4F6;
-    --fc-text-primary: #1A1A1A;
+    --fc-bg-card: var(--wp--preset--color--white);
+    --fc-bg-secondary: var(--wp--preset--color--background);
+    --fc-text-primary: var(--wp--preset--color--text-dark);
     --fc-text-secondary: #6B7280;
-    --fc-text-muted: #9CA3AF;
-    --fc-border-color: #E5E7EB;
-    --fc-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05);
-    --fc-shadow-light: 0px 1px 3px rgba(0, 0, 0, 0.05);
+    --fc-text-muted: var(--wp--preset--color--text-muted);
+    --fc-border-color: var(--wp--preset--color--border);
+    --fc-shadow: var(--wp--preset--shadow--lg);
+    --fc-shadow-light: var(--wp--preset--shadow--xs);
 }
 
 /* Dark mode overrides */
@@ -27,7 +27,7 @@ html.dark {
 }
 
 .jurible-flashcards-container {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     max-width: 640px;
     margin: 0 auto;
     padding: clamp(12px, 4vw, 20px);
@@ -45,7 +45,7 @@ html.dark {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 8px;
+    gap: var(--wp--preset--spacing--xs);
     width: 100%;
 }
 
@@ -58,16 +58,16 @@ html.dark {
 }
 
 .fc-progress-label {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 500;
-    font-size: 14px;
+    font-size: var(--wp--preset--font-size--small);
     color: var(--fc-text-secondary);
 }
 
 .fc-progress-count {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--wp--preset--font-size--small);
     color: var(--fc-text-primary);
 }
 
@@ -79,15 +79,15 @@ html.dark {
     width: 100%;
     height: 8px;
     background: var(--fc-bg-secondary);
-    border-radius: 4px;
+    border-radius: var(--wp--custom--border-radius--xs);
     overflow: hidden;
 }
 
 .fc-progress-fill {
     height: 8px;
-    background: linear-gradient(90.72deg, #B0001D 0%, #DC2626 50%, #7C3AED 100%);
-    border-radius: 4px;
-    transition: width 0.3s ease;
+    background: linear-gradient(90.72deg, var(--wp--preset--color--primary) 0%, #DC2626 50%, var(--wp--preset--color--secondary) 100%);
+    border-radius: var(--wp--custom--border-radius--xs);
+    transition: var(--wp--custom--transition--slow);
 }
 
 /* ==================== CARD BASE ==================== */
@@ -97,10 +97,10 @@ html.dark {
     background: var(--fc-bg-card);
     border: 1px solid var(--fc-border-color);
     box-shadow: var(--fc-shadow);
-    border-radius: 16px;
+    border-radius: var(--wp--custom--border-radius--lg);
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: var(--wp--custom--transition--default);
 }
 
 .fc-card:hover {
@@ -112,29 +112,29 @@ html.dark {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 24px;
+    padding: 12px var(--wp--preset--spacing--md);
     height: 45px;
 }
 
 /* ==================== CARD QUESTION ==================== */
 .fc-card-question .fc-card-header {
-    background: linear-gradient(94.73deg, #B0001D 0%, #DC2626 50%, #7C3AED 100%);
+    background: linear-gradient(94.73deg, var(--wp--preset--color--primary) 0%, #DC2626 50%, var(--wp--preset--color--secondary) 100%);
 }
 
 .fc-card-label {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 700;
-    font-size: 12px;
+    font-size: var(--wp--preset--font-size--caption);
     line-height: 18px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--wp--preset--color--white);
 }
 
 .fc-card-num {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--wp--preset--font-size--small);
     line-height: 21px;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -150,10 +150,10 @@ html.dark {
 }
 
 .fc-card-body p {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 500;
     font-size: clamp(16px, 4vw, 18px);
-    line-height: 1.5;
+    line-height: var(--wp--custom--line-height--body);
     text-align: center;
     color: var(--fc-text-primary);
     margin: 0;
@@ -164,15 +164,15 @@ html.dark {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px 24px;
+    padding: var(--wp--preset--spacing--sm) var(--wp--preset--spacing--md);
     background: var(--fc-bg-secondary);
     border-top: 1px solid var(--fc-border-color);
 }
 
 .fc-card-hint span {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 400;
-    font-size: 12px;
+    font-size: var(--wp--preset--font-size--caption);
     line-height: 18px;
     color: var(--fc-text-muted);
 }
@@ -183,7 +183,7 @@ html.dark {
     background: var(--fc-bg-card);
     border: 1px solid var(--fc-border-color);
     box-shadow: var(--fc-shadow);
-    border-radius: 16px;
+    border-radius: var(--wp--custom--border-radius--lg);
 }
 
 .fc-card-answer .fc-card-header {
@@ -193,7 +193,7 @@ html.dark {
 .fc-card-answer .fc-card-label {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--wp--preset--spacing--xs);
     color: var(--fc-text-secondary);
 }
 
@@ -238,13 +238,13 @@ html.dark {
     align-items: center;
     padding: clamp(12px, 3vw, 16px) clamp(20px, 5vw, 32px);
     min-width: clamp(130px, 30vw, 160px);
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
+    border-radius: var(--wp--custom--border-radius--md);
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 600;
     font-size: clamp(12px, 3vw, 14px);
     line-height: 21px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: var(--wp--custom--transition--default);
     border: none;
 }
 
@@ -259,9 +259,9 @@ html.dark {
 }
 
 .fc-btn-yes {
-    background: #10B981;
+    background: var(--wp--preset--color--success);
     box-shadow: 0px 2px 8px rgba(16, 185, 129, 0.25);
-    color: #FFFFFF;
+    color: var(--wp--preset--color--white);
 }
 
 .fc-btn-yes:hover {
@@ -274,7 +274,7 @@ html.dark {
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    gap: 24px;
+    gap: var(--wp--preset--spacing--md);
 }
 
 .fc-results-header {
@@ -282,19 +282,19 @@ html.dark {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 12px 32px;
-    background: linear-gradient(94.73deg, #B0001D 0%, #DC2626 50%, #7C3AED 100%);
-    border-radius: 999px;
+    padding: 12px var(--wp--preset--spacing--lg);
+    background: linear-gradient(94.73deg, var(--wp--preset--color--primary) 0%, #DC2626 50%, var(--wp--preset--color--secondary) 100%);
+    border-radius: var(--wp--custom--border-radius--full);
 }
 
 .fc-results-header span {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 700;
-    font-size: 12px;
+    font-size: var(--wp--preset--font-size--caption);
     line-height: 18px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--wp--preset--color--white);
 }
 
 .fc-results-icon {
@@ -304,7 +304,7 @@ html.dark {
 }
 
 .fc-results-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 700;
     font-size: clamp(24px, 6vw, 32px);
     line-height: 1.4;
@@ -314,7 +314,7 @@ html.dark {
 }
 
 .fc-results-sub {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 400;
     font-size: clamp(14px, 3.5vw, 16px);
     line-height: 24px;
@@ -345,7 +345,7 @@ html.dark {
     gap: clamp(8px, 2vw, 12px);
     background: var(--fc-bg-card);
     border: 1px solid var(--fc-border-color);
-    border-radius: 12px;
+    border-radius: var(--wp--custom--border-radius--lg);
     box-shadow: var(--fc-shadow-light);
 }
 
@@ -354,22 +354,22 @@ html.dark {
 }
 
 .fc-stat-num {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 700;
     font-size: clamp(16px, 4vw, 20px);
     line-height: 30px;
 }
 
 .fc-stat-green .fc-stat-num {
-    color: #10B981;
+    color: var(--wp--preset--color--success);
 }
 
 .fc-stat-orange .fc-stat-num {
-    color: #F59E0B;
+    color: var(--wp--preset--color--warning);
 }
 
 .fc-stat-label {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 500;
     font-size: clamp(12px, 3vw, 14px);
     line-height: 21px;
@@ -385,7 +385,7 @@ html.dark {
     gap: clamp(8px, 2vw, 12px);
     background: var(--fc-bg-card);
     border: 1px solid var(--fc-border-color);
-    border-radius: 12px;
+    border-radius: var(--wp--custom--border-radius--lg);
     box-shadow: var(--fc-shadow-light);
 }
 
@@ -394,7 +394,7 @@ html.dark {
 }
 
 .fc-results-streak .fc-stat-num {
-    color: #F59E0B;
+    color: var(--wp--preset--color--warning);
 }
 
 .fc-results-streak .fc-stat-label {
@@ -413,9 +413,9 @@ html.dark {
 }
 
 .fc-btn-primary {
-    background: linear-gradient(94.73deg, #B0001D 0%, #DC2626 50%, #7C3AED 100%);
-    color: #FFFFFF;
-    box-shadow: 0px 4px 12px rgba(124, 58, 237, 0.25);
+    background: linear-gradient(94.73deg, var(--wp--preset--color--primary) 0%, #DC2626 50%, var(--wp--preset--color--secondary) 100%);
+    color: var(--wp--preset--color--white);
+    box-shadow: var(--wp--preset--shadow--accent);
 }
 
 .fc-btn-primary:hover {
@@ -440,18 +440,18 @@ html.dark {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 48px 24px;
+    padding: 48px var(--wp--preset--spacing--md);
     background: var(--fc-bg-secondary);
     border: 1px solid var(--fc-border-color);
-    border-radius: 16px;
+    border-radius: var(--wp--custom--border-radius--lg);
     text-align: center;
 }
 
 .fc-empty p,
 .fc-error p {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--wp--preset--font-size--medium);
     line-height: 24px;
     color: var(--fc-text-secondary);
     margin: 0;
@@ -463,9 +463,9 @@ html.dark {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 48px 24px;
-    font-family: 'Poppins', sans-serif;
+    padding: 48px var(--wp--preset--spacing--md);
+    font-family: var(--wp--preset--font-family--poppins);
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--wp--preset--font-size--medium);
     color: var(--fc-text-secondary);
 }
