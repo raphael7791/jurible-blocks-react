@@ -166,7 +166,7 @@
 
 /* ==================== WARNING ALERT ==================== */
 .jurible-alert--warning {
-    background: #FFFBEB;
+    background: var(--wp--preset--color--warning-bg);
 }
 
 .jurible-alert--warning .jurible-alert-icon {
@@ -204,27 +204,27 @@
 
 /* ==================== ERROR ALERT ==================== */
 .jurible-alert--error {
-    background: #FEF2F2;
+    background: var(--wp--preset--color--error-bg);
 }
 
 .jurible-alert--error .jurible-alert-icon {
-    color: #EF4444;
+    color: var(--wp--preset--color--error);
 }
 
 .jurible-alert--error .jurible-alert-title {
-    color: #EF4444;
+    color: var(--wp--preset--color--error);
 }
 
 .jurible-alert--error .jurible-alert-description {
-    color: #991B1B;
+    color: var(--wp--preset--color--error-text);
 }
 
 .jurible-alert--error .jurible-alert-close {
-    color: #EF4444;
+    color: var(--wp--preset--color--error);
 }
 
 .jurible-alert--error .jurible-alert-btn--primary {
-    background: #EF4444;
+    background: var(--wp--preset--color--error);
 }
 
 .jurible-alert--error .jurible-alert-btn--primary:hover {
@@ -232,8 +232,8 @@
 }
 
 .jurible-alert--error .jurible-alert-btn--secondary {
-    color: #EF4444;
-    border-color: #EF4444;
+    color: var(--wp--preset--color--error);
+    border-color: var(--wp--preset--color--error);
 }
 
 .jurible-alert--error .jurible-alert-btn--secondary:hover {

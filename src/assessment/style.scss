@@ -62,8 +62,8 @@
 }
 
 .assess-status-graded {
-    background: #D1FAE5;
-    color: #047857;
+    background: var(--wp--preset--color--success-bg);
+    color: var(--wp--preset--color--success-text);
 }
 
 /* Due date */
@@ -77,12 +77,12 @@
 }
 
 .assess-due-date.overdue {
-    background: #FEF2F2;
-    color: #991B1B;
+    background: var(--wp--preset--color--error-bg);
+    color: var(--wp--preset--color--error-text);
 }
 
 .overdue-badge {
-    background: #EF4444;
+    background: var(--wp--preset--color--error);
     color: var(--wp--preset--color--white);
     padding: 2px 8px;
     border-radius: 10px;
@@ -113,7 +113,7 @@
 
 .assess-upload-zone p {
     margin: 0 0 10px 0;
-    color: #6B7280;
+    color: var(--wp--preset--color--text-gray);
     font-size: var(--wp--preset--font-size--small);
 }
 
@@ -166,7 +166,7 @@
 .assess-file-remove {
     background: none;
     border: none;
-    color: #EF4444;
+    color: var(--wp--preset--color--error);
     cursor: pointer;
     font-size: 18px;
     padding: 5px;
@@ -175,7 +175,7 @@
 }
 
 .assess-file-remove:hover {
-    background: #FEE2E2;
+    background: var(--wp--preset--color--error-bg);
 }
 
 /* Submit button */
@@ -264,7 +264,7 @@
 }
 
 .assess-score.score-low .assess-score-value {
-    color: #EF4444;
+    color: var(--wp--preset--color--error);
 }
 
 /* Feedback */
@@ -342,7 +342,7 @@
 .assess-loading {
     text-align: center;
     padding: 40px;
-    color: #6B7280;
+    color: var(--wp--preset--color--text-gray);
 }
 
 .assess-spinner {

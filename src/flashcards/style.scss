@@ -7,7 +7,7 @@
     --fc-bg-card: var(--wp--preset--color--white);
     --fc-bg-secondary: var(--wp--preset--color--background);
     --fc-text-primary: var(--wp--preset--color--text-dark);
-    --fc-text-secondary: #6B7280;
+    --fc-text-secondary: var(--wp--preset--color--text-gray);
     --fc-text-muted: var(--wp--preset--color--text-muted);
     --fc-border-color: var(--wp--preset--color--border);
     --fc-shadow: var(--wp--preset--shadow--lg);
@@ -250,8 +250,8 @@ html.dark {
 
 .fc-btn-no {
     background: var(--fc-bg-card);
-    border: 2px solid #EF4444;
-    color: #EF4444;
+    border: 2px solid var(--wp--preset--color--error);
+    color: var(--wp--preset--color--error);
 }
 
 .fc-btn-no:hover {
