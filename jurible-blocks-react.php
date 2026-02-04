@@ -30,6 +30,8 @@ function jurible_blocks_react_init() {
 	register_block_type( __DIR__ . '/build/badge-trust' );
 	register_block_type( __DIR__ . '/build/pricing-duration-selector' );
 	register_block_type( __DIR__ . '/build/card-formule-reussite' );
+	register_block_type( __DIR__ . '/build/card-pricing-suite-ia' );
+	register_block_type( __DIR__ . '/build/card-produits-comparatif' );
 	// register_block_type( __DIR__ . '/build/playlist' );
 }
 add_action( 'init', 'jurible_blocks_react_init' );

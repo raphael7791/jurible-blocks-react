@@ -1,0 +1,362 @@
+/* ==================== CARD PRICING SUITE IA ==================== */
+
+.wp-block-jurible-card-pricing-suite-ia.card-pricing-suite-ia-wrapper {
+	container-type: inline-size;
+}
+
+/* ==================== GRILLE MINOS ==================== */
+.minos-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	align-items: stretch;
+}
+
+/* ==================== CARD MINOS ==================== */
+.minos-card {
+	position: relative;
+	background: #FFFFFF;
+	border: 1px solid #E5E7EB;
+	border-radius: 12px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	transition: all 150ms ease;
+	cursor: pointer;
+}
+
+.minos-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* ==================== CARD FEATURED (Pro) ==================== */
+.minos-card--featured {
+	border: 2px solid transparent;
+	background:
+		linear-gradient(white, white) padding-box,
+		linear-gradient(135deg, #B0001D 0%, #7C3AED 100%) border-box;
+	transform: scale(1.03);
+	box-shadow: 0 4px 14px rgba(124, 58, 237, 0.25);
+}
+
+.minos-card--featured:hover {
+	transform: scale(1.03) translateY(-4px);
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 14px rgba(124, 58, 237, 0.25);
+}
+
+/* ==================== RIBBON ==================== */
+.minos-card__ribbon {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	right: -1px;
+	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 8px 24px;
+	border-radius: 12px 12px 0 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+}
+
+.minos-card--featured .minos-card__credits {
+	margin-top: 24px;
+}
+
+/* ==================== BADGE CRÉDITS ==================== */
+.minos-card__credits {
+	display: inline-flex;
+	align-items: center;
+	padding: 5px 12px;
+	border-radius: 9999px;
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	width: fit-content;
+}
+
+.minos-card__credits--standard {
+	background: #FEF3C7;
+	color: #92400E;
+}
+
+.minos-card__credits--pro {
+	background: #F59E0B;
+	color: #FFFFFF;
+}
+
+.minos-card__credits--bonus {
+	background: #EDE9FE;
+	color: #7C3AED;
+}
+
+/* ==================== HEADER ==================== */
+.minos-card__header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+	flex-wrap: wrap;
+}
+
+.minos-card__title {
+	font-size: 20px;
+	font-weight: 700;
+	color: #1A1A1A;
+	margin: 0;
+}
+
+/* ==================== BADGE POPULAIRE ==================== */
+.minos-card__badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 4px 10px;
+	border-radius: 9999px;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.minos-card__badge--popular {
+	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
+	color: #FFFFFF;
+}
+
+/* ==================== DESCRIPTION ==================== */
+.minos-card__description {
+	font-size: 13px;
+	color: #4B5563;
+	margin: 0 0 24px 0;
+}
+
+/* ==================== PRICING ==================== */
+.minos-card__pricing {
+	margin-bottom: 16px;
+}
+
+.minos-card__price-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 4px;
+}
+
+.minos-card__price {
+	font-size: 36px;
+	font-weight: 700;
+	color: #1A1A1A;
+	line-height: 1;
+}
+
+.minos-card__price--success {
+	color: #10B981;
+}
+
+.minos-card__discount {
+	display: inline-flex;
+	align-items: center;
+	background: #ECFDF5;
+	color: #065F46;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 6px 12px;
+	border-radius: 8px;
+}
+
+.minos-card__price-info {
+	font-size: 12px;
+	color: #9CA3AF;
+	margin: 4px 0 0 0;
+}
+
+/* ==================== INCLUDES ==================== */
+.minos-card__includes {
+	margin-bottom: 24px;
+	flex: 1;
+}
+
+.minos-card__includes-label {
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #9CA3AF;
+	margin: 0 0 8px 0;
+}
+
+.minos-card__includes-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.minos-card__include-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 13px;
+	color: #4B5563;
+}
+
+/* ==================== CTA ==================== */
+.minos-card__cta {
+	width: 100%;
+	padding: 12px 24px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 150ms ease;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	box-sizing: border-box;
+	margin-top: auto;
+}
+
+.minos-card__cta--gradient {
+	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
+	color: #FFFFFF;
+	border: none;
+}
+
+.minos-card__cta--gradient:hover {
+	filter: brightness(1.1);
+	transform: translateY(-1px);
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.minos-card__cta--outline {
+	background: #FFFFFF;
+	color: #1A1A1A;
+	border: 1px solid #E5E7EB;
+}
+
+.minos-card__cta--outline:hover {
+	border-color: #F59E0B;
+	color: #92400E;
+	background: #FEF3C7;
+	text-decoration: none;
+}
+
+.minos-card__cta--outline-primary {
+	border-color: #B0001D;
+	color: #B0001D;
+}
+
+.minos-card__cta--outline-primary:hover {
+	background: #B0001D;
+	color: #FFFFFF;
+	border-color: #B0001D;
+	text-decoration: none;
+}
+
+/* ==================== NOTE ==================== */
+.minos-card__note {
+	font-size: 11px;
+	color: #9CA3AF;
+	text-align: center;
+	margin: 8px 0 0 0;
+}
+
+.minos-card__note a {
+	color: #7C3AED;
+	text-decoration: underline;
+}
+
+.minos-card__note a:hover {
+	color: #5B21B6;
+}
+
+/* ==================== CONTAINER QUERY : 3 colonnes → 1 colonne ==================== */
+@container (max-width: 850px) {
+	.minos-grid {
+		grid-template-columns: 1fr;
+		max-width: 400px;
+		margin: 0 auto;
+		gap: 16px;
+	}
+
+	.minos-card--featured {
+		transform: scale(1);
+		order: -1;
+	}
+
+	.minos-card--featured:hover {
+		transform: translateY(-4px);
+	}
+
+	.minos-card {
+		padding: 20px;
+	}
+
+	.minos-card__title {
+		font-size: 18px;
+	}
+
+	.minos-card__price {
+		font-size: 32px;
+	}
+
+	.minos-card__discount {
+		font-size: 12px;
+		padding: 4px 10px;
+	}
+
+	.minos-card__cta {
+		padding: 10px 20px;
+		font-size: 13px;
+	}
+}
+
+/* ==================== TRÈS PETIT ÉCRAN ==================== */
+@container (max-width: 400px) {
+	.minos-grid {
+		max-width: 100%;
+	}
+
+	.minos-card {
+		padding: 16px;
+	}
+
+	.minos-card__ribbon {
+		font-size: 10px;
+		padding: 6px 16px;
+	}
+
+	.minos-card__credits {
+		font-size: 11px;
+		padding: 4px 10px;
+	}
+
+	.minos-card__title {
+		font-size: 16px;
+	}
+
+	.minos-card__description {
+		font-size: 12px;
+	}
+
+	.minos-card__price {
+		font-size: 28px;
+	}
+
+	.minos-card__include-item {
+		font-size: 12px;
+	}
+
+	.minos-card__cta {
+		padding: 10px 16px;
+		font-size: 12px;
+	}
+}

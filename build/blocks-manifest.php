@@ -478,6 +478,376 @@ return array(
 		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js'
 	),
+	'card-pricing-suite-ia' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'jurible/card-pricing-suite-ia',
+		'version' => '1.0.0',
+		'title' => 'Card Pricing Suite IA',
+		'category' => 'jurible',
+		'icon' => 'superhero-alt',
+		'description' => 'Cards de pricing pour la suite IA Minos avec 3 formules',
+		'keywords' => array(
+			'pricing',
+			'minos',
+			'ia',
+			'crédits',
+			'suite'
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => array(
+				'wide',
+				'full'
+			)
+		),
+		'attributes' => array(
+			'card1CreditsText' => array(
+				'type' => 'string',
+				'default' => '30 crédits'
+			),
+			'card1Title' => array(
+				'type' => 'string',
+				'default' => 'Standard'
+			),
+			'card1BadgeText' => array(
+				'type' => 'string',
+				'default' => 'Populaire'
+			),
+			'card1ShowBadge' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'card1Description' => array(
+				'type' => 'string',
+				'default' => 'Pour une utilisation régulière.'
+			),
+			'card1Price' => array(
+				'type' => 'string',
+				'default' => '5€'
+			),
+			'card1Includes' => array(
+				'type' => 'string',
+				'default' => 'Accès aux 4 générateurs
+~20 devoirs générés
+Sauvegarde illimitée
+Crédits sans expiration'
+			),
+			'card1CtaText' => array(
+				'type' => 'string',
+				'default' => 'Acheter 30 crédits'
+			),
+			'card1CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'card2CreditsText' => array(
+				'type' => 'string',
+				'default' => '100 crédits'
+			),
+			'card2Title' => array(
+				'type' => 'string',
+				'default' => 'Pro'
+			),
+			'card2RibbonText' => array(
+				'type' => 'string',
+				'default' => 'Meilleure valeur'
+			),
+			'card2Description' => array(
+				'type' => 'string',
+				'default' => 'Pour les gros consommateurs.'
+			),
+			'card2Price' => array(
+				'type' => 'string',
+				'default' => '17€'
+			),
+			'card2DiscountText' => array(
+				'type' => 'string',
+				'default' => '-30%'
+			),
+			'card2ShowDiscount' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'card2Includes' => array(
+				'type' => 'string',
+				'default' => 'Accès aux 4 générateurs
+~70 devoirs générés
+Sauvegarde illimitée
+Crédits sans expiration'
+			),
+			'card2CtaText' => array(
+				'type' => 'string',
+				'default' => 'Acheter 100 crédits'
+			),
+			'card2CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'card3CreditsText' => array(
+				'type' => 'string',
+				'default' => 'Bonus Académie'
+			),
+			'card3Title' => array(
+				'type' => 'string',
+				'default' => 'Abonnés'
+			),
+			'card3Description' => array(
+				'type' => 'string',
+				'default' => 'Avantage réservé aux abonnés.'
+			),
+			'card3Price' => array(
+				'type' => 'string',
+				'default' => 'Gratuit'
+			),
+			'card3PriceInfo' => array(
+				'type' => 'string',
+				'default' => '10 crédits offerts / mois'
+			),
+			'card3Includes' => array(
+				'type' => 'string',
+				'default' => '10 crédits IA offerts
+Renouvelés chaque mois
+Cumulables avec achats'
+			),
+			'card3CtaText' => array(
+				'type' => 'string',
+				'default' => 'S\'abonner à l\'Académie'
+			),
+			'card3CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'card3NoteText' => array(
+				'type' => 'string',
+				'default' => 'Déjà abonné ?'
+			),
+			'card3NoteLinkText' => array(
+				'type' => 'string',
+				'default' => 'Connectez-vous'
+			),
+			'card3NoteLinkUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'card3ShowNote' => array(
+				'type' => 'boolean',
+				'default' => true
+			)
+		),
+		'textdomain' => 'jurible-blocks-react',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
+	'card-produits-comparatif' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'jurible/card-produits-comparatif',
+		'version' => '1.0.0',
+		'title' => 'Card Produits Comparatif',
+		'category' => 'jurible',
+		'icon' => 'grid-view',
+		'description' => 'Comparatif des 4 produits Jurible : Académie, Prépas, Fiches PDF, Minos',
+		'keywords' => array(
+			'produits',
+			'comparatif',
+			'académie',
+			'prépas',
+			'fiches',
+			'minos'
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => array(
+				'wide',
+				'full'
+			)
+		),
+		'attributes' => array(
+			'card1RibbonText' => array(
+				'type' => 'string',
+				'default' => 'Offre principale'
+			),
+			'card1TypeText' => array(
+				'type' => 'string',
+				'default' => 'Abonnement'
+			),
+			'card1Title' => array(
+				'type' => 'string',
+				'default' => 'Académie'
+			),
+			'card1Description' => array(
+				'type' => 'string',
+				'default' => 'Cours vidéo, fiches, QCM et flashcards pour toutes les matières.'
+			),
+			'card1Features' => array(
+				'type' => 'string',
+				'default' => '20 matières complètes
+500+ heures de vidéo
+QCM, flashcards, mindmaps'
+			),
+			'card1Price' => array(
+				'type' => 'string',
+				'default' => '29€'
+			),
+			'card1PriceSuffix' => array(
+				'type' => 'string',
+				'default' => '/mois'
+			),
+			'card1PriceInfo' => array(
+				'type' => 'string',
+				'default' => 'ou 140€ pour 6 mois (-20%)'
+			),
+			'card1SocialProof' => array(
+				'type' => 'string',
+				'default' => '25 000+ étudiants inscrits'
+			),
+			'card1ShowSocialProof' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'card1TargetText' => array(
+				'type' => 'string',
+				'default' => 'Étudiants en L1, L2, L3 ou Capacité'
+			),
+			'card1CtaText' => array(
+				'type' => 'string',
+				'default' => 'S\'abonner à l\'Académie'
+			),
+			'card1CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'card2TypeText' => array(
+				'type' => 'string',
+				'default' => 'Formation intensive'
+			),
+			'card2Title' => array(
+				'type' => 'string',
+				'default' => 'Prépas'
+			),
+			'card2Description' => array(
+				'type' => 'string',
+				'default' => 'Formation intensive avec accompagnement personnalisé.'
+			),
+			'card2Features' => array(
+				'type' => 'string',
+				'default' => 'Coaching individuel
+Corrections personnalisées
+Accès Académie inclus'
+			),
+			'card2Price' => array(
+				'type' => 'string',
+				'default' => '1 300€'
+			),
+			'card2PriceInfo' => array(
+				'type' => 'string',
+				'default' => 'Formation complète'
+			),
+			'card2TargetText' => array(
+				'type' => 'string',
+				'default' => 'Reconversion, redoublants, concours'
+			),
+			'card2CtaText' => array(
+				'type' => 'string',
+				'default' => 'Découvrir les Prépas'
+			),
+			'card2CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'card3TypeText' => array(
+				'type' => 'string',
+				'default' => 'Achat unique'
+			),
+			'card3Title' => array(
+				'type' => 'string',
+				'default' => 'Fiches PDF'
+			),
+			'card3Description' => array(
+				'type' => 'string',
+				'default' => 'Fiches téléchargeables et imprimables.'
+			),
+			'card3Features' => array(
+				'type' => 'string',
+				'default' => 'Format PDF imprimable
+Mindmaps incluses
+Accès à vie'
+			),
+			'card3Price' => array(
+				'type' => 'string',
+				'default' => '19€'
+			),
+			'card3PriceInfo' => array(
+				'type' => 'string',
+				'default' => 'par matière • Accès à vie'
+			),
+			'card3TargetText' => array(
+				'type' => 'string',
+				'default' => 'Ceux qui préfèrent réviser sur papier'
+			),
+			'card3CtaText' => array(
+				'type' => 'string',
+				'default' => 'Voir les Fiches PDF'
+			),
+			'card3CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'card4TypeText' => array(
+				'type' => 'string',
+				'default' => 'Crédits IA'
+			),
+			'card4Title' => array(
+				'type' => 'string',
+				'default' => 'Minos'
+			),
+			'card4Description' => array(
+				'type' => 'string',
+				'default' => '4 outils IA pour générer vos exercices juridiques.'
+			),
+			'card4Features' => array(
+				'type' => 'string',
+				'default' => 'Fiche d\'arrêt
+Dissertation
+Cas pratique
+Commentaire d\'arrêt'
+			),
+			'card4Price' => array(
+				'type' => 'string',
+				'default' => '5€'
+			),
+			'card4PriceInfo' => array(
+				'type' => 'string',
+				'default' => 'à partir de • 30 crédits'
+			),
+			'card4BonusText' => array(
+				'type' => 'string',
+				'default' => '10 crédits offerts aux abonnés Académie'
+			),
+			'card4ShowBonus' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'card4TargetText' => array(
+				'type' => 'string',
+				'default' => 'Ceux qui veulent gagner du temps'
+			),
+			'card4CtaText' => array(
+				'type' => 'string',
+				'default' => 'Découvrir Minos'
+			),
+			'card4CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			)
+		),
+		'textdomain' => 'jurible-blocks-react',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
 	'card-testimonial' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
