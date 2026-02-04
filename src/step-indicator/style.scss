@@ -1,0 +1,91 @@
+/* ==================== STEP INDICATOR ==================== */
+.jurible-steps {
+    display: flex;
+    align-items: flex-start;
+}
+
+.jurible-step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.jurible-step__circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    background: #F3F4F6;
+    color: #9CA3AF;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.jurible-step__line {
+    width: 60px;
+    height: 2px;
+    background: #E5E7EB;
+    flex-shrink: 0;
+}
+
+/* Active step */
+.jurible-step--active .jurible-step__circle {
+    background: linear-gradient(135deg, #B0001D 0%, #DC2626 50%, #7C3AED 100%);
+    color: #FFFFFF;
+}
+
+/* Completed step */
+.jurible-step--completed .jurible-step__circle {
+    background: linear-gradient(135deg, #B0001D 0%, #DC2626 50%, #7C3AED 100%);
+    color: #FFFFFF;
+}
+
+.jurible-step--completed + .jurible-step .jurible-step__line,
+.jurible-step--active .jurible-step__line {
+    background: linear-gradient(90deg, #B0001D 0%, #DC2626 50%, #7C3AED 100%);
+}
+
+/* Labels - wrap step content */
+.jurible-step--with-label {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.jurible-step--with-label .jurible-step__content {
+    display: flex;
+    align-items: center;
+}
+
+.jurible-step--with-label .jurible-step__circle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jurible-step__label {
+    font-size: 12px;
+    color: #9CA3AF;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 8px;
+    max-width: 80px;
+}
+
+.jurible-step--active .jurible-step__label {
+    color: #1A1A1A;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .jurible-step__line {
+        width: 40px;
+    }
+
+    .jurible-step__label {
+        font-size: 10px;
+    }
+}

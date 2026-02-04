@@ -1,0 +1,61 @@
+/* ==================== BREADCRUMB ==================== */
+.jurible-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.jurible-breadcrumb-item {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.jurible-breadcrumb-item:hover {
+    color: #B0001D;
+}
+
+.jurible-breadcrumb-item--active {
+    color: #1A1A1A;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.jurible-breadcrumb-separator {
+    color: #9CA3AF;
+}
+
+/* Home item */
+.jurible-breadcrumb-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.jurible-breadcrumb-home-icon {
+    display: none;
+    width: 16px;
+    height: 16px;
+}
+
+.jurible-breadcrumb-home-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.jurible-breadcrumb-home-text {
+    display: inline;
+}
+
+/* Mobile: show icon, hide text */
+@media (max-width: 767px) {
+    .jurible-breadcrumb-home--icon-mobile .jurible-breadcrumb-home-icon {
+        display: inline-flex;
+    }
+
+    .jurible-breadcrumb-home--icon-mobile .jurible-breadcrumb-home-text {
+        display: none;
+    }
+}

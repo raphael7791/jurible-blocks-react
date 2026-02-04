@@ -22,6 +22,12 @@ function jurible_blocks_react_init() {
 	register_block_type( __DIR__ . '/build/citation' );
 	register_block_type( __DIR__ . '/build/flashcards' );
 	register_block_type( __DIR__ . '/build/assessment' );
-	register_block_type( __DIR__ . '/build/playlist' );
+	register_block_type( __DIR__ . '/build/alert' );
+	register_block_type( __DIR__ . '/build/breadcrumb' );
+	register_block_type( __DIR__ . '/build/step-indicator' );
+	register_block_type( __DIR__ . '/build/card-cours' );
+	register_block_type( __DIR__ . '/build/card-testimonial' );
+	register_block_type( __DIR__ . '/build/badge-trust' );
+	// register_block_type( __DIR__ . '/build/playlist' );
 }
 add_action( 'init', 'jurible_blocks_react_init' );
