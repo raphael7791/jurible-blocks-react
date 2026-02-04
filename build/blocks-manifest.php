@@ -985,6 +985,37 @@ Commentaire d\'arrêt'
 		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js'
 	),
+	'footer-accordion' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'jurible/footer-accordion',
+		'version' => '1.0.0',
+		'title' => 'Footer Accordion',
+		'category' => 'widgets',
+		'icon' => 'list-view',
+		'description' => 'Section accordéon pour le footer mobile',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'attributes' => array(
+			'title' => array(
+				'type' => 'string',
+				'default' => 'Section'
+			),
+			'isOpenByDefault' => array(
+				'type' => 'boolean',
+				'default' => false
+			)
+		),
+		'textdomain' => 'jurible-blocks-react',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'viewScript' => 'file:./view.js'
+	),
 	'infobox' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
@@ -1067,6 +1098,57 @@ Commentaire d\'arrêt'
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
+	),
+	'newsletter' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'jurible/newsletter',
+		'version' => '1.0.0',
+		'title' => 'Newsletter Jurible',
+		'category' => 'widgets',
+		'icon' => 'email',
+		'description' => 'Formulaire d\'inscription newsletter avec input email et bouton',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => array(
+				'wide',
+				'full'
+			)
+		),
+		'attributes' => array(
+			'title' => array(
+				'type' => 'string',
+				'default' => 'Newsletter'
+			),
+			'description' => array(
+				'type' => 'string',
+				'default' => 'Recevez nos conseils et actualités pour réussir vos études de droit.'
+			),
+			'placeholder' => array(
+				'type' => 'string',
+				'default' => 'Votre email'
+			),
+			'buttonText' => array(
+				'type' => 'string',
+				'default' => 'S\'inscrire'
+			),
+			'variant' => array(
+				'type' => 'string',
+				'default' => 'dark'
+			),
+			'layout' => array(
+				'type' => 'string',
+				'default' => 'horizontal'
+			)
+		),
+		'textdomain' => 'jurible-blocks-react',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php'
 	),
 	'pricing-duration-selector' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',

@@ -33,6 +33,8 @@ function jurible_blocks_react_init() {
 	register_block_type( __DIR__ . '/build/card-pricing-suite-ia' );
 	register_block_type( __DIR__ . '/build/card-produits-comparatif' );
 	register_block_type( __DIR__ . '/build/solution-card' );
+	register_block_type( __DIR__ . '/build/newsletter' );
+	// register_block_type( __DIR__ . '/build/footer-accordion' ); // Désactivé - utilise CSS/JS à la place
 	// register_block_type( __DIR__ . '/build/playlist' );
 }
 add_action( 'init', 'jurible_blocks_react_init' );
