@@ -315,6 +315,169 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
+	'card-formule-reussite' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'jurible/card-formule-reussite',
+		'version' => '1.0.0',
+		'title' => 'Card Formule Réussite',
+		'category' => 'jurible',
+		'icon' => 'awards',
+		'description' => 'Card premium pour présenter la formule Réussite avec countdown et features',
+		'keywords' => array(
+			'formule',
+			'réussite',
+			'pricing',
+			'premium',
+			'countdown'
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => array(
+				'wide',
+				'full'
+			)
+		),
+		'attributes' => array(
+			'ribbonText' => array(
+				'type' => 'string',
+				'default' => 'Édition Limitée'
+			),
+			'badgeText' => array(
+				'type' => 'string',
+				'default' => 'Formule Premium'
+			),
+			'title' => array(
+				'type' => 'string',
+				'default' => 'Réussite'
+			),
+			'seasonBadgeText' => array(
+				'type' => 'string',
+				'default' => 'Offre estivale été 2026'
+			),
+			'showSeasonBadge' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'originalValue' => array(
+				'type' => 'string',
+				'default' => 'Valeur 580€'
+			),
+			'price' => array(
+				'type' => 'string',
+				'default' => '397'
+			),
+			'pricePeriod' => array(
+				'type' => 'string',
+				'default' => '/ accès 12 mois'
+			),
+			'savingsText' => array(
+				'type' => 'string',
+				'default' => 'Économisez 183€'
+			),
+			'countdownLabel' => array(
+				'type' => 'string',
+				'default' => 'Ouverture des inscriptions dans'
+			),
+			'countdownDate' => array(
+				'type' => 'string',
+				'default' => '2026-06-01T00:00:00'
+			),
+			'showCountdown' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'socialProofCount' => array(
+				'type' => 'string',
+				'default' => '143'
+			),
+			'socialProofText' => array(
+				'type' => 'string',
+				'default' => 'étudiants sur liste d\'attente'
+			),
+			'headerTitle' => array(
+				'type' => 'string',
+				'default' => 'Tout pour réussir vos examens'
+			),
+			'headerSubtitle' => array(
+				'type' => 'string',
+				'default' => 'La formule complète avec accompagnement personnalisé'
+			),
+			'feature1Icon' => array(
+				'type' => 'string',
+				'default' => '🎬'
+			),
+			'feature1Title' => array(
+				'type' => 'string',
+				'default' => '1 devoir corrigé en vidéo'
+			),
+			'feature1Desc' => array(
+				'type' => 'string',
+				'default' => 'Par un enseignant en droit'
+			),
+			'feature2Icon' => array(
+				'type' => 'string',
+				'default' => '💬'
+			),
+			'feature2Title' => array(
+				'type' => 'string',
+				'default' => '5 questions à un juriste'
+			),
+			'feature2Desc' => array(
+				'type' => 'string',
+				'default' => 'Réponses sous 48h'
+			),
+			'feature3Icon' => array(
+				'type' => 'string',
+				'default' => '📚'
+			),
+			'feature3Title' => array(
+				'type' => 'string',
+				'default' => 'Pack Fiches PDF'
+			),
+			'feature3Desc' => array(
+				'type' => 'string',
+				'default' => 'Téléchargeables'
+			),
+			'feature4Icon' => array(
+				'type' => 'string',
+				'default' => '🎓'
+			),
+			'feature4Title' => array(
+				'type' => 'string',
+				'default' => 'Accès Académie 12 mois'
+			),
+			'feature4Desc' => array(
+				'type' => 'string',
+				'default' => '20 matières complètes'
+			),
+			'includesTitle' => array(
+				'type' => 'string',
+				'default' => 'Également inclus :'
+			),
+			'includesTags' => array(
+				'type' => 'string',
+				'default' => 'Cours vidéo, QCM, Flashcards, Mindmaps, Annales'
+			),
+			'ctaText' => array(
+				'type' => 'string',
+				'default' => 'S\'inscrire sur la liste d\'attente'
+			),
+			'ctaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'noticeText' => array(
+				'type' => 'string',
+				'default' => 'Je souhaite être prévenu en avant-première'
+			)
+		),
+		'textdomain' => 'jurible-blocks-react',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'viewScript' => 'file:./view.js'
+	),
 	'card-testimonial' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,

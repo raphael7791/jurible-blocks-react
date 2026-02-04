@@ -1,0 +1,624 @@
+/* ==================== CARD FORMULE RÉUSSITE ==================== */
+
+.wp-block-jurible-card-formule-reussite.card-formule-reussite-wrapper {
+	container-type: inline-size;
+}
+
+.card-reussite {
+	position: relative;
+	background: #FFFFFF;
+	border: 2px solid #7C3AED;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ==================== RIBBON ==================== */
+.card-reussite__ribbon {
+	position: absolute;
+	top: 20px;
+	right: -35px;
+	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 6px 40px;
+	transform: rotate(45deg);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+	z-index: 10;
+}
+
+/* ==================== CONTENT GRID ==================== */
+.card-reussite__content {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+}
+
+/* ==================== COLONNE GAUCHE ==================== */
+.card-reussite__left {
+	background: linear-gradient(135deg, #EDE9FE 0%, #DDD6FE 100%);
+	padding: 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 24px;
+}
+
+.card-reussite__badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: #7C3AED;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 6px 14px;
+	border-radius: 9999px;
+}
+
+.card-reussite__badge svg {
+	width: 14px;
+	height: 14px;
+}
+
+.card-reussite__title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #5B21B6;
+	margin: 0;
+}
+
+.card-reussite__season {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+	color: #92400E;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 6px 12px;
+	border-radius: 9999px;
+}
+
+/* ==================== PRICING BOX ==================== */
+.card-reussite__pricing {
+	background: #FFFFFF;
+	padding: 24px;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+	width: 100%;
+}
+
+.card-reussite__value {
+	font-size: 13px;
+	color: #9CA3AF;
+	text-decoration: line-through;
+	margin-bottom: 4px;
+}
+
+.card-reussite__price {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	gap: 4px;
+	flex-wrap: wrap;
+}
+
+.card-reussite__price-amount {
+	font-size: 32px;
+	font-weight: 700;
+	color: #7C3AED;
+}
+
+.card-reussite__price-period {
+	font-size: 14px;
+	color: #4B5563;
+}
+
+.card-reussite__savings {
+	display: inline-block;
+	background: #ECFDF5;
+	color: #065F46;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 4px 10px;
+	border-radius: 9999px;
+	margin-top: 8px;
+}
+
+/* ==================== COUNTDOWN ==================== */
+.card-reussite__countdown-wrapper {
+	width: 100%;
+}
+
+.card-reussite__countdown-label {
+	font-size: 13px;
+	font-weight: 500;
+	color: #5B21B6;
+	margin: 0 0 8px 0;
+}
+
+.card-reussite__countdown {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+
+.countdown-item {
+	background: #FFFFFF;
+	padding: 10px 14px;
+	border-radius: 6px;
+	text-align: center;
+	min-width: 56px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.countdown-item__value {
+	font-size: 20px;
+	font-weight: 700;
+	color: #7C3AED;
+	line-height: 1;
+}
+
+.countdown-item__label {
+	font-size: 10px;
+	color: #9CA3AF;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+/* ==================== SOCIAL PROOF ==================== */
+.card-reussite__social-proof {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	font-size: 12px;
+	color: #5B21B6;
+	font-weight: 500;
+}
+
+.card-reussite__social-proof svg {
+	width: 14px;
+	height: 14px;
+}
+
+/* ==================== COLONNE DROITE ==================== */
+.card-reussite__right {
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.card-reussite__header {
+	padding-right: 60px;
+}
+
+.card-reussite__header-title {
+	font-size: 18px;
+	font-weight: 600;
+	color: #1A1A1A;
+	margin: 0 0 4px 0;
+}
+
+.card-reussite__header-subtitle {
+	font-size: 14px;
+	color: #9CA3AF;
+	margin: 0;
+}
+
+/* ==================== FEATURES ==================== */
+.card-reussite__features {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.feature-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	padding: 16px;
+	background: #F9FAFB;
+	border-radius: 8px;
+	transition: all 150ms ease;
+}
+
+.feature-item:hover {
+	background: #EDE9FE;
+}
+
+.feature-item__icon {
+	width: 40px;
+	height: 40px;
+	background: #EDE9FE;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	font-size: 18px;
+}
+
+.feature-item__content {
+	flex: 1;
+	min-width: 0;
+}
+
+.feature-item__title {
+	font-size: 14px;
+	font-weight: 600;
+	color: #1A1A1A;
+	margin-bottom: 2px;
+}
+
+.feature-item__desc {
+	font-size: 12px;
+	color: #9CA3AF;
+	line-height: 1.4;
+}
+
+/* ==================== INCLUDES ==================== */
+.card-reussite__includes {
+	background: #F9FAFB;
+	padding: 16px;
+	border-radius: 8px;
+}
+
+.card-reussite__includes-title {
+	font-size: 13px;
+	font-weight: 600;
+	color: #1A1A1A;
+	margin: 0 0 8px 0;
+}
+
+.card-reussite__includes-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.include-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	background: #FFFFFF;
+	padding: 4px 10px;
+	border-radius: 9999px;
+	font-size: 11px;
+	color: #4B5563;
+}
+
+.include-tag svg {
+	width: 12px;
+	height: 12px;
+	color: #10B981;
+}
+
+/* ==================== CTA SECTION ==================== */
+.card-reussite__cta-section {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-top: auto;
+}
+
+.card-reussite__cta {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 100%;
+	padding: 14px 24px;
+	background: linear-gradient(135deg, #B0001D 0%, #7C3AED 100%);
+	color: #FFFFFF;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 150ms ease;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.card-reussite__cta:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+	filter: brightness(1.1);
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.card-reussite__cta svg {
+	width: 18px;
+	height: 18px;
+}
+
+.card-reussite__notice {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	font-size: 12px;
+	color: #9CA3AF;
+	font-style: italic;
+	margin: 0;
+}
+
+.card-reussite__notice svg {
+	width: 14px;
+	height: 14px;
+	color: #7C3AED;
+}
+
+/* ==================== CONTAINER QUERY : 2 colonnes → 1 colonne ==================== */
+@container (max-width: 850px) {
+	.card-reussite__content {
+		grid-template-columns: 1fr;
+	}
+
+	.card-reussite__left {
+		padding: 40px;
+		gap: 16px;
+	}
+
+	.card-reussite__right {
+		padding: 32px;
+		gap: 16px;
+	}
+
+	.card-reussite__header {
+		padding-right: 50px;
+	}
+
+	.card-reussite__header-title {
+		font-size: 16px;
+	}
+
+	.card-reussite__features {
+		grid-template-columns: 1fr;
+		gap: 8px;
+	}
+
+	.feature-item {
+		padding: 12px;
+	}
+
+	.feature-item__icon {
+		width: 36px;
+		height: 36px;
+		font-size: 16px;
+	}
+
+	.feature-item__title {
+		font-size: 13px;
+	}
+
+	.feature-item__desc {
+		font-size: 11px;
+	}
+
+	.card-reussite__ribbon {
+		font-size: 10px;
+		padding: 4px 30px;
+		top: 15px;
+		right: -30px;
+	}
+
+	.card-reussite__title {
+		font-size: 20px;
+	}
+
+	.card-reussite__price-amount {
+		font-size: 28px;
+	}
+
+	.card-reussite__pricing {
+		padding: 16px;
+	}
+
+	.countdown-item {
+		padding: 8px 10px;
+		min-width: 48px;
+	}
+
+	.countdown-item__value {
+		font-size: 16px;
+	}
+
+	.countdown-item__label {
+		font-size: 9px;
+	}
+
+	.card-reussite__countdown-label {
+		font-size: 12px;
+	}
+
+	.card-reussite__social-proof {
+		font-size: 11px;
+	}
+
+	.card-reussite__includes {
+		padding: 12px;
+	}
+
+	.card-reussite__includes-title {
+		font-size: 12px;
+	}
+
+	.include-tag {
+		font-size: 10px;
+		padding: 3px 8px;
+	}
+
+	.card-reussite__cta {
+		padding: 12px 16px;
+		font-size: 14px;
+	}
+
+	.card-reussite__notice {
+		font-size: 11px;
+	}
+}
+
+/* ==================== TRÈS PETIT ÉCRAN ==================== */
+@container (max-width: 400px) {
+	.card-reussite__left {
+		padding: 32px;
+		gap: 12px;
+	}
+
+	.card-reussite__right {
+		padding: 24px;
+		gap: 12px;
+	}
+
+	.card-reussite__badge {
+		font-size: 9px;
+		padding: 4px 10px;
+	}
+
+	.card-reussite__badge svg {
+		width: 10px;
+		height: 10px;
+	}
+
+	.card-reussite__title {
+		font-size: 18px;
+	}
+
+	.card-reussite__season {
+		font-size: 10px;
+		padding: 4px 8px;
+	}
+
+	.card-reussite__price-amount {
+		font-size: 24px;
+	}
+
+	.card-reussite__price-period {
+		font-size: 11px;
+	}
+
+	.card-reussite__pricing {
+		padding: 10px;
+	}
+
+	.card-reussite__value {
+		font-size: 11px;
+	}
+
+	.card-reussite__savings {
+		font-size: 10px;
+		padding: 3px 8px;
+	}
+
+	.countdown-item {
+		padding: 6px 8px;
+		min-width: 40px;
+	}
+
+	.countdown-item__value {
+		font-size: 14px;
+	}
+
+	.countdown-item__label {
+		font-size: 8px;
+	}
+
+	.card-reussite__countdown-label {
+		font-size: 10px;
+	}
+
+	.card-reussite__social-proof {
+		font-size: 10px;
+	}
+
+	.card-reussite__social-proof svg {
+		width: 12px;
+		height: 12px;
+	}
+
+	.card-reussite__header {
+		padding-right: 40px;
+	}
+
+	.card-reussite__header-title {
+		font-size: 14px;
+	}
+
+	.card-reussite__header-subtitle {
+		font-size: 11px;
+	}
+
+	.feature-item {
+		padding: 8px;
+	}
+
+	.feature-item__icon {
+		width: 32px;
+		height: 32px;
+		font-size: 14px;
+	}
+
+	.feature-item__title {
+		font-size: 12px;
+	}
+
+	.feature-item__desc {
+		font-size: 10px;
+	}
+
+	.card-reussite__ribbon {
+		font-size: 8px;
+		padding: 4px 25px;
+		top: 12px;
+		right: -28px;
+	}
+
+	.card-reussite__includes {
+		padding: 8px;
+	}
+
+	.card-reussite__includes-title {
+		font-size: 11px;
+	}
+
+	.include-tag {
+		font-size: 9px;
+		padding: 2px 6px;
+	}
+
+	.include-tag svg {
+		width: 10px;
+		height: 10px;
+	}
+
+	.card-reussite__cta {
+		padding: 10px 12px;
+		font-size: 12px;
+	}
+
+	.card-reussite__cta svg {
+		width: 14px;
+		height: 14px;
+	}
+
+	.card-reussite__notice {
+		font-size: 10px;
+	}
+
+	.card-reussite__notice svg {
+		width: 12px;
+		height: 12px;
+	}
+}
