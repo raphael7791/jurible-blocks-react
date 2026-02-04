@@ -535,6 +535,184 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
+	'pricing-duration-selector' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'jurible/pricing-duration-selector',
+		'version' => '1.0.0',
+		'title' => 'Pricing Duration Selector',
+		'category' => 'jurible',
+		'icon' => 'money-alt',
+		'description' => 'Sélecteur de durée d\'abonnement avec 4 options de pricing',
+		'keywords' => array(
+			'pricing',
+			'tarif',
+			'abonnement',
+			'durée',
+			'price'
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => array(
+				'wide',
+				'full'
+			)
+		),
+		'attributes' => array(
+			'option1Duration' => array(
+				'type' => 'string',
+				'default' => '1 mois'
+			),
+			'option1Price' => array(
+				'type' => 'string',
+				'default' => '29'
+			),
+			'option1OriginalPrice' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'option1MonthlyPrice' => array(
+				'type' => 'string',
+				'default' => '29€/mois'
+			),
+			'option1SavingsPercent' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'option1SavingsAmount' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'option1IsPopular' => array(
+				'type' => 'boolean',
+				'default' => false
+			),
+			'option1CtaText' => array(
+				'type' => 'string',
+				'default' => 'Commencer'
+			),
+			'option1CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'option2Duration' => array(
+				'type' => 'string',
+				'default' => '3 mois'
+			),
+			'option2Price' => array(
+				'type' => 'string',
+				'default' => '78'
+			),
+			'option2OriginalPrice' => array(
+				'type' => 'string',
+				'default' => '87€'
+			),
+			'option2MonthlyPrice' => array(
+				'type' => 'string',
+				'default' => '26€/mois'
+			),
+			'option2SavingsPercent' => array(
+				'type' => 'string',
+				'default' => '-10%'
+			),
+			'option2SavingsAmount' => array(
+				'type' => 'string',
+				'default' => 'Économisez 9€'
+			),
+			'option2IsPopular' => array(
+				'type' => 'boolean',
+				'default' => false
+			),
+			'option2CtaText' => array(
+				'type' => 'string',
+				'default' => 'Commencer'
+			),
+			'option2CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'option3Duration' => array(
+				'type' => 'string',
+				'default' => '6 mois'
+			),
+			'option3Price' => array(
+				'type' => 'string',
+				'default' => '140'
+			),
+			'option3OriginalPrice' => array(
+				'type' => 'string',
+				'default' => '174€'
+			),
+			'option3MonthlyPrice' => array(
+				'type' => 'string',
+				'default' => '23€/mois'
+			),
+			'option3SavingsPercent' => array(
+				'type' => 'string',
+				'default' => '-20%'
+			),
+			'option3SavingsAmount' => array(
+				'type' => 'string',
+				'default' => 'Économisez 34€'
+			),
+			'option3IsPopular' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'option3CtaText' => array(
+				'type' => 'string',
+				'default' => 'Commencer'
+			),
+			'option3CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'option4Duration' => array(
+				'type' => 'string',
+				'default' => '12 mois'
+			),
+			'option4Price' => array(
+				'type' => 'string',
+				'default' => '240'
+			),
+			'option4OriginalPrice' => array(
+				'type' => 'string',
+				'default' => '348€'
+			),
+			'option4MonthlyPrice' => array(
+				'type' => 'string',
+				'default' => '20€/mois'
+			),
+			'option4SavingsPercent' => array(
+				'type' => 'string',
+				'default' => '-31%'
+			),
+			'option4SavingsAmount' => array(
+				'type' => 'string',
+				'default' => 'Économisez 108€'
+			),
+			'option4IsPopular' => array(
+				'type' => 'boolean',
+				'default' => false
+			),
+			'option4CtaText' => array(
+				'type' => 'string',
+				'default' => 'Commencer'
+			),
+			'option4CtaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			),
+			'noticeText' => array(
+				'type' => 'string',
+				'default' => 'Tous les abonnements sont renouvelables automatiquement et résiliables en 1 clic'
+			)
+		),
+		'textdomain' => 'jurible-blocks-react',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
 	'sommaire' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
