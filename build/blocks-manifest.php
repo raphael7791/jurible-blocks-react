@@ -946,6 +946,65 @@ Commentaire d\'arrêt'
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
+	'cta-banner' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'jurible/cta-banner',
+		'version' => '1.0.0',
+		'title' => 'CTA Bannière',
+		'category' => 'jurible',
+		'icon' => 'megaphone',
+		'description' => 'Bannière d\'appel à l\'action inline avec 3 variantes (gradient, blanc, noir)',
+		'keywords' => array(
+			'cta',
+			'call to action',
+			'bannière',
+			'promo',
+			'marketing'
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => array(
+				'wide',
+				'full'
+			)
+		),
+		'attributes' => array(
+			'variant' => array(
+				'type' => 'string',
+				'default' => 'gradient',
+				'enum' => array(
+					'gradient',
+					'white',
+					'dark'
+				)
+			),
+			'icon' => array(
+				'type' => 'string',
+				'default' => '🎓'
+			),
+			'title' => array(
+				'type' => 'string',
+				'default' => 'Rejoins l\'Académie Jurible'
+			),
+			'description' => array(
+				'type' => 'string',
+				'default' => 'Accède à +500h de cours, fiches et QCM pour réussir ta licence de droit.'
+			),
+			'buttonText' => array(
+				'type' => 'string',
+				'default' => 'Découvrir →'
+			),
+			'buttonUrl' => array(
+				'type' => 'string',
+				'default' => '/tarifs'
+			)
+		),
+		'textdomain' => 'jurible-blocks-react',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
+	),
 	'flashcards' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
