@@ -1158,6 +1158,140 @@ Commentaire d\'arrêt'
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css'
 	),
+	'method-tabs' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'jurible/method-tabs',
+		'version' => '1.0.0',
+		'title' => 'Method Tabs',
+		'category' => 'jurible',
+		'icon' => 'welcome-learn-more',
+		'description' => 'Section avec onglets présentant les différentes méthodes d\'apprentissage',
+		'keywords' => array(
+			'tabs',
+			'méthode',
+			'onglets',
+			'vidéo',
+			'contenu'
+		),
+		'supports' => array(
+			'html' => false,
+			'align' => array(
+				'full',
+				'wide'
+			)
+		),
+		'attributes' => array(
+			'sectionBadge' => array(
+				'type' => 'string',
+				'default' => 'Notre pédagogie'
+			),
+			'sectionTitle' => array(
+				'type' => 'string',
+				'default' => 'Découvrez notre méthode'
+			),
+			'sectionSubtitle' => array(
+				'type' => 'string',
+				'default' => 'Accédez à un extrait du cours sans inscription'
+			),
+			'activeTab' => array(
+				'type' => 'number',
+				'default' => 0
+			),
+			'tabs' => array(
+				'type' => 'array',
+				'default' => array(
+					array(
+						'icon' => '🎬',
+						'label' => 'Vidéo',
+						'videoUrl' => '',
+						'videoTitle' => 'Les composantes de l\'État',
+						'contentTitle' => 'Vidéo : Les composantes de l\'État',
+						'contentDescription' => 'Découvrez les éléments constitutifs de l\'État : territoire, population et souveraineté. Une introduction claire et pédagogique au droit constitutionnel.',
+						'linkText' => 'Voir plus',
+						'linkUrl' => '#'
+					),
+					array(
+						'icon' => '📄',
+						'label' => 'Fiches',
+						'videoUrl' => '',
+						'videoTitle' => '',
+						'contentTitle' => 'Fiches de révision',
+						'contentDescription' => 'Des fiches synthétiques pour réviser efficacement tous les concepts clés du droit.',
+						'linkText' => 'Voir plus',
+						'linkUrl' => '#'
+					),
+					array(
+						'icon' => '📚',
+						'label' => 'Méthodologie',
+						'videoUrl' => '',
+						'videoTitle' => '',
+						'contentTitle' => 'Méthodologie juridique',
+						'contentDescription' => 'Apprenez les techniques de rédaction : cas pratique, dissertation, commentaire d\'arrêt.',
+						'linkText' => 'Voir plus',
+						'linkUrl' => '#'
+					),
+					array(
+						'icon' => '✅',
+						'label' => 'QCM',
+						'videoUrl' => '',
+						'videoTitle' => '',
+						'contentTitle' => 'Quiz et QCM',
+						'contentDescription' => 'Testez vos connaissances avec nos milliers de questions à choix multiples.',
+						'linkText' => 'Voir plus',
+						'linkUrl' => '#'
+					),
+					array(
+						'icon' => '🃏',
+						'label' => 'Flashcards',
+						'videoUrl' => '',
+						'videoTitle' => '',
+						'contentTitle' => 'Flashcards',
+						'contentDescription' => 'Mémorisez les notions essentielles grâce à la répétition espacée.',
+						'linkText' => 'Voir plus',
+						'linkUrl' => '#'
+					),
+					array(
+						'icon' => '📝',
+						'label' => 'Annales',
+						'videoUrl' => '',
+						'videoTitle' => '',
+						'contentTitle' => 'Annales corrigées',
+						'contentDescription' => 'Entraînez-vous avec les sujets d\'examen des années précédentes.',
+						'linkText' => 'Voir plus',
+						'linkUrl' => '#'
+					),
+					array(
+						'icon' => '🎥',
+						'label' => 'Fiches vidéo',
+						'videoUrl' => '',
+						'videoTitle' => '',
+						'contentTitle' => 'Fiches vidéo',
+						'contentDescription' => 'Des résumés vidéo de 5 minutes pour réviser rapidement avant les examens.',
+						'linkText' => 'Voir plus',
+						'linkUrl' => '#'
+					)
+				)
+			),
+			'ctaText' => array(
+				'type' => 'string',
+				'default' => 'Débloquer le cours complet'
+			),
+			'ctaSubtext' => array(
+				'type' => 'string',
+				'default' => '→ 500 Fiches'
+			),
+			'ctaUrl' => array(
+				'type' => 'string',
+				'default' => '#'
+			)
+		),
+		'textdomain' => 'jurible-blocks-react',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'viewScript' => 'file:./view.js'
+	),
 	'newsletter' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
